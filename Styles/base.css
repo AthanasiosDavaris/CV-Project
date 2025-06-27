@@ -68,7 +68,7 @@ footer {
 }
 
 main {
-  min-height: 700px;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
