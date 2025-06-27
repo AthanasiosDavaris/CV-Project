@@ -1,0 +1,76 @@
+:root {
+  --primary-color: mediumaquamarine;
+  --secondary-color: orange;
+  --background-color: rgb(248, 250, 252);
+  --text-color: rgb(34, 44, 58);
+  --accent-color: rgb(255, 231, 179);
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--primary-color);
+  color: white;
+  padding: 16px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+nav li {
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a:active {
+  color: var(--secondary-color);
+}
+
+footer {
+  text-align: center;
+  padding: 16px 0;
+  color: var(--text-color);
+  background: var(--background-color);
+  font-size: 15px;
+  border-top: 1px solid rgb(238, 238, 238);
+  margin-top: 32px;
+}
+
+main {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color);
+}
