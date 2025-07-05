@@ -1,0 +1,121 @@
+@import url('base.css');
+
+.main-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.card {
+  max-width: 480px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 2px 24px rgba(54,81,162,0.10);
+  text-align: center;
+}
+
+.card h1 {
+  color: var(--primary-color);
+  font-size: 35px;
+  margin-bottom: 32px;
+}
+
+.card p {
+  color: var(--text-color);
+  margin-bottom: 19px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1.5px solid rgb(221, 227, 237);
+  border-radius: 6px;
+  font-size: 16px;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: border 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.cta-btn {
+  background: var(--secondary-color);
+  color: var(--text-color);
+  padding: 11px 32px;
+  border-radius: 32px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.cta-btn:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.contact-details {
+  margin-top: 32px;
+  text-align: left;
+}
+
+.contact-details p {
+  margin-bottom: 6px;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.contact-details p {
+  color: var(--primary-color);
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.contact-details a:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 700px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 15px;
+    padding: 7px;
+  }
+}
